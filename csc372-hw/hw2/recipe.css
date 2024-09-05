@@ -83,7 +83,7 @@ body {
 /* Tooltip Styles */
 .hover_abbrv {
     position: relative;
-    cursor: help;
+    cursor: pointer;
     text-decoration: underline;
     border-bottom: 1px dotted #000;
 }
