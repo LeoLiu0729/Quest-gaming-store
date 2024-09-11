@@ -4,6 +4,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Logo Styling */
+.logo-text {
+    font-size: 2.5rem;  
+    color: #00b3ff; 
+    text-align: center;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff;  
+    animation: glowText 1.5s infinite alternate;  
+    margin-top: 20px;
+}
+
+
+@keyframes glowText {
+    0% {
+        text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff;
+    }
+    100% {
+        text-shadow: 0 0 20px #00b3ff, 0 0 40px #00b3ff;
+    }
+}
+
 
 body {
     font-family: 'Orbitron', sans-serif;
@@ -165,6 +185,25 @@ nav ul li a:hover {
 .product .button:hover {
     background-color: #007acc;
     box-shadow: 0 0 10px rgba(0, 179, 255, 0.5);
+}
+/* Our Products Title Style */
+.our-products-title h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00b3ff;  
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff;  
+    margin-top: 20px;
+    animation: glowText 1.5s infinite alternate;  
+}
+
+/* Glowing text animation for consistency */
+@keyframes glowText {
+    0% {
+        text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff;
+    }
+    100% {
+        text-shadow: 0 0 20px #00b3ff, 0 0 40px #00b3ff;
+    }
 }
 
 /* Footer */
