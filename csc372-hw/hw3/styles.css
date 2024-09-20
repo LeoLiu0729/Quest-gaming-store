@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+  }
+  
+  .intro {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommendations {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .gallery img {
+    width: 100px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .gallery img.active {
+    transform: scale(1.5);
+    border: 3px solid #4CAF50;
+  }
+  
+  .description-box {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
