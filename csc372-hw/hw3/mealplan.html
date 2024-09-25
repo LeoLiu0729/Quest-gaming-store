@@ -4,21 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create Your Meal Plan</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="script/mealplan.js" defer></script>
 </head>
 <body>
+  <!-- Back to Home Button at the top -->
+  <div class="back-to-home">
+    <a href="index.html" class="back-home-btn">Back to Homepage</a>
+  </div>
+
   <header>
-    <h1>Build Your Perfect Meal Plan 🍽</h1>
+    <h3>Build Your Perfect Meal Plan 🍽</h3>
   </header>
 
   <main class="meal-plan-container">
     <div class="dishes-list">
       <h2>Select Your Dishes:</h2>
       <ul>
-        <li data-price="10">Margherita Pizza - $10</li>
-        <li data-price="12">Pepperoni Pizza - $12</li>
-        <li data-price="9">Pulled Pork Sandwich - $9</li>
-        <li data-price="15">BBQ Ribs - $15</li>
+        <li data-price="12.99" data-img="images/friedchicken.png">Fried Chicken - $12.99</li>
+        <li data-price="13.99" data-img="images/friedfish.png">Collard Greens - $13.99</li>
+        <li data-price="7.99" data-img="images/macandchess.png">Mac and Cheese - $7.99</li>
+        <li data-price="12.99" data-img="images/SpicyTunaRoll.png">Spicy Tuna Roll - $12.99</li>
+        <li data-price="14.99" data-img="images/TempuraUdon.png">Tonkotsu Ramen - $14.99</li>
+        <li data-price="11.99" data-img="images/Tonkotsu.png">Tempura Udon - $11.99</li>
+        <li data-price="5.99" data-img="images/milktea.png">Classic Milk Tea - $5.99</li>
+        <li data-price="6.99" data-img="images/FruitTea.png">Fruit Tea - $6.99</li>
+        <li data-price="7.99" data-img="images/Latte.png">Matcha Latte - $7.99</li>
       </ul>
     </div>
 
@@ -29,6 +40,8 @@
     </div>
   </main>
 
-  <script src="js/mealplan.js"></script>
+  <footer>
+    <p>&copy; 2024 Campus Food | Your Guide to the Best Food Near UNCG</p>
+  </footer>
 </body>
 </html>
