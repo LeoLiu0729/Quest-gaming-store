@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Bulk Upload - Quest Gaming Store</title>
+    <link rel="stylesheet" href="styles/admin.css">
+    
+</head>
+<body>
+    <!-- Admin Navigation -->
+    <header>
+        <div class="admin-logo">
+            <h1>Admin - Quest Gaming Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin-upload.html">Bulk Upload</a></li>
+                <li><a href="admin-products.html">Manage Products</a></li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bulk Upload Section -->
+    <section class="admin-upload">
+        <h2>Bulk Upload Products</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="file-upload">Select a file to upload (JSON, CSV, or TXT):</label>
+            <input type="file" id="file-upload" name="file-upload" accept=".json, .csv, .txt," required>
+            <button type="submit">Upload File</button>
+        </form>
+
+        <h3>Example File Format</h3>
+        <pre>
+[
+    {
+        "product_id": "001",
+        "name": "GeForce RTX 4090",
+        "description": "The latest graphics card",
+        "category": "Graphics Card",
+        "image_path": "images/rtx4090.jpg",
+        "price": "1499.99"
+    }
+]
+        </pre>
+        <p>Accepted formats: .json, .csv, .txt,</p>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Quest Gaming Store Admin. All rights reserved.</p>
+    </footer>
+    <script src="scripts/admin.js"></script>
+</body>
+</html>
