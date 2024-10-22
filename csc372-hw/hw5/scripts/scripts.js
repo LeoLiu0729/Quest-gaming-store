@@ -1,15 +1,18 @@
-document.getElementById('searchBtn').addEventListener('click', fetchRepos);
+document.getElementById('searchBtn').addEventListener('click', () => {
+    const username = document.getElementById('username').value.trim(); // Get the input value
+    fetchRepos(username); 
+});
 
-// Fetch repositories when the page loads
+
 window.onload = () => {
-    fetchRepos('LeoLiu0729');
+    fetchRepos('LeoLiu0729'); // Default username
 };
 
 async function fetchRepos(username) {
     const gallery = document.getElementById('gallery');
     gallery.innerHTML = ''; 
 
-    const user = username || document.getElementById('username').value || 'LeoLiu0729'; // Default username
+    const user = username || 'LeoLiu0729'; // Default username if none provided
 
     try {
         // Fetch the repositories from the GitHub API
@@ -42,8 +45,7 @@ async function fetchRepos(username) {
 
     } catch (error) {
         gallery.innerHTML = `<p>Failed to load repositories for user '${user}'. Please try again.</p>`;
-        console.error(error); // Log error for debugging purposes
-    }
+        console.error(error); 
 }
 
 // Function to fetch the number of commits for a specific repository
@@ -68,4 +70,5 @@ async function fetchLanguages(username, repoName) {
         console.error(`Error fetching languages for ${repoName}:`, error);
         return []; // Fallback in case of an error
     }
+}
 }
