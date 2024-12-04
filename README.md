@@ -24,8 +24,11 @@ This is a full-stack e-commerce application for managing and purchasing gaming p
 
 
 Install dependencies:
+```bash
 npm install
-Initialize the database: Run the SQL script to create and populate tables:
+
+Initialize the database:
+Run the SQL script to create and populate tables:
 
 sqlite3 backend/database/termproject.db < backend/database/initialize_database.sql
 Start the server:
